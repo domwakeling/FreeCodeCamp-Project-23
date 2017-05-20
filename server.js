@@ -136,7 +136,7 @@ function storeNewURL(res, reqURL, db, collection) {
                     'short_URL': herokuURL + nextNum
                 }
           
-                res.json(newDoc);                   // ... and once stored, finally return the
+                res.json(ret);                   // ... and once stored, finally return the
                 db.close();                         //     doc to browser and close the database
                 
             })
