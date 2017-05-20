@@ -13,19 +13,21 @@
             
             <h3>Creating a new shortened URL</h3>
             
-            <p>To create a new shortened URL, enter the address <code class="red-text">https://dry-castle-31853.herokuapp.com/new/</code>
+            <p>To create a new shortened URL, enter the address <code class="red-text">https://doms-url.herokuapp.com/new/</code>
                 followed by the URL that you wish to shorten.</p>
-            <p>So, for example, to generate a shortcut for <code class="red-text">http://domwakeling.com</code> you would use the
-                full address:</p>
+            <p>So, for example, to generate a shortcut for <code class="red-text">http://www.domwakeling.com</code> you would use this
+                 address in the browser address bar:</p>
             
-            <p><code class="red-text">https://dry-castle-31853.herokuapp.com/new/http://domwakeling.com</code></p>
+            <p><code class="red-text">https://doms-url.herokuapp.com/new/http://www.domwakeling.com</code></p>
             
-            <p>In return you will receive a shortened URL, for instance</p>
+            <p>The URL that you are shortening <strong>must</strong> start with either <code class="red-text">http://</code> or
+                <code class="red-text">https://</code>.</p>
             
-            <p><code class="red-text">https://dry-castle-31853.herokuapp.com/1</code></p>
+            <h3>Result</h3>
             
-            <p>If a shortened URL already exists for the website, that URL will be returned; otherwise a new shortened URL will
-                be constructed and returned.</p>
+            <p>You will receive a JSON with the shortened URL, so for instance:</p>
+            
+            <p><code class="red-text">{'long_URL': 'http://www.domwakeling.com/', 'short_URL': 'https://doms-url.herokuapp.com/1'}</code></p>
             
             <h3>Using a shortened URL</h3>
             
@@ -33,7 +35,7 @@
             
             <div class="centred">
                 <p>Created by <a href="http://www.domwakeling.com" target="_blank">Dom Wakeling</a></p>
-                <p><em>Written as part of <a href="https://www.freecodecamp">FreeCodeCamp</a> Project 22</em></p>
+                <p><em>Written as part of <a href="https://www.freecodecamp">FreeCodeCamp</a> Project 23</em></p>
             </div>
         
         </div><!-- .container -->
